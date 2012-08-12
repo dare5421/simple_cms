@@ -1,4 +1,7 @@
 class DemoController < ApplicationController
+  
+  layout 'admin'
+
   def index
   	#render 'hello'
   	#redirect_to :controller => 'demo', :action => 'other_hello'
@@ -14,5 +17,12 @@ class DemoController < ApplicationController
   def other_hello
    	render :text => "<h1> what the fuck are you doing?</h1>"
   end
+
+  def text_helpers    
+  end
+
+  def escape_output    
+  end
+  
 
 end
